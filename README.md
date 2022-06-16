@@ -1,6 +1,6 @@
 # Game Mania
 
-<a href="https://erickyall.github.io/Site-Game-Mania-Senai/"> Acesse aqui </a>
+<a href="https://erickyall.github.io/Game-Mania/"> Acesse aqui </a>
 
 >Home Page
 <img src="/images/home.png"/>
