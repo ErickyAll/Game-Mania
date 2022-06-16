@@ -1,12 +1,12 @@
 
-/* @font-face {
+@font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Titilliun";
   src: url(../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
-} */
+} 
 
 *{
   margin: 0;
