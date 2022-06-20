@@ -50,13 +50,24 @@ header {
    
  }
 
- .menu a {
+ .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+ }
+
+ .menu-text {
   text-decoration: none;
   color: white;
-  padding: 40px;
   font-size: 17px;
   text-transform: uppercase;
   
+ }
+
+ .menu-text{
+  cursor: pointer;
  }
 
  .banner {
