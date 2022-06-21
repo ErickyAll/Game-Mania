@@ -1,36 +1,50 @@
 
 @font-face {
+
   font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
+
 }
+
 @font-face {
+
   font-family: "Titilliun";
   src: url(../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+
 } 
 
 *{
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
+
   font-family: 'Roboto', sans-serif;
+
 }
 
 header {
+
   background-color: black;
+
 }
+
 .container {
+
   max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-
 }
+
 .logo {
+
   max-width: 416px;
   display: flex;
   align-items: center;
@@ -39,11 +53,14 @@ header {
 }
 
  .logoImg {
+
    height: 120px;
    width: 140px;
+
  }
 
  .logotype {
+
    color: white;
    padding-left: 25px;
    font-size: 35px;
@@ -51,6 +68,7 @@ header {
  }
 
  .menu {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +77,7 @@ header {
  }
 
  .menu-text {
+
   text-decoration: none;
   color: white;
   font-size: 17px;
@@ -67,54 +86,34 @@ header {
  }
 
  .menu-text{
+
   cursor: pointer;
  }
 
  .banner {
-   background-image: linear-gradient(to right, #310C7E 20%, white);
-   display: flex;
+  background-image: url(../images/Background-banner.PNG);
+  background-size: cover;
+   display: grid;
+   grid-template-columns: 1fr 200px;
+   grid-template-areas: Banner texto;
    height: 629px;
- }
- 
- .images-banner {
-   display: flex;
-   flex-direction: column;
-
- }
- .mario {
-   width: 532px;
-   height: 360px;
-   padding-top: 1px;
-   padding-left: 130px;
-   
- }
-
- .soldado {
-   width: 529px;
-   height: 426px;
-   margin-left: 200px;
-   
- }
-
- .DK {
-   width: 229px;
-   height: 266px;
-   margin-left: -200px;
-   margin-top: 20px;
-   
+   padding: 0 200px;
+  
  }
 
  .text-banner{
+   grid-area: texto;
+   color: black;
    font-family: 'Titilliun';
-   margin-left: 200px;
-   margin-top: -50px;
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
+
  }
 
  .text-banner h2 {
+
   padding-top: 70px;
    font-size: 75px;
    text-shadow: 10px 30px 10px rgba(0, 0, 0, 0.256);
@@ -122,7 +121,7 @@ header {
  
  .subscribe {
    
-   margin-top: 10px;
+   margin-top: 30px;
    background-color: #310C7E;
    height: 70px;
    width: 350px;
@@ -134,19 +133,25 @@ header {
    text-transform: uppercase;
    color: white;
    margin-bottom: 50px;
+
  }
+
  .link-sub {
    text-decoration: none;
    color: white;
    font-family: 'Roboto';
  }
+
  .subscribe:hover{
+
    cursor: pointer;
    color: white;
    background-color: #0b041b;
+
  }
 
  .patrocinio {
+
    background-color: #310C7E;
    height: 120px;
    display: flex;
@@ -155,20 +160,24 @@ header {
    
  }
 
-
  .sony {
+
    width: 270px;
    height: 57px;
    padding-right: 70px;
+
  }
  
  .nintendo {
+
    width: 270px;
    height: 57px;
    padding-right: 70px;
+
  }
  
  .playstation {
+
    width: 270px;
    height: 57px;
    padding-right: 70px;
@@ -178,15 +187,20 @@ header {
    width: 220px;
    height: 100px;
    padding-right: 70px;
+
  }
  
  .products-Bg {
+
    height: 2000px;
    background-image: linear-gradient(to bottom, black,#310C7E );
+
  }
 
  .card-product {
+
    height: 380px;
    width: 530px;
+
  }
 
