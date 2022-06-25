@@ -90,6 +90,8 @@ header {
   cursor: pointer;
  }
 
+
+ 
  .banner {
   background-image: url(../images/Background-banner.PNG);
   background-size: cover;
@@ -194,13 +196,22 @@ header {
 
    height: 2000px;
    background-image: linear-gradient(to bottom, black,#310C7E );
+  
 
  }
 
- .card-product {
+ .card {
+  margin: 35px 10px 0 0;
+ }
 
-   height: 380px;
-   width: 530px;
+ .btn {
+  background-color: #310C7E;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+ }
 
+ .btn:hover {
+  background-color: #6b35df;
  }
 
