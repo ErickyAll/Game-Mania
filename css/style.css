@@ -202,8 +202,14 @@ header {
 
  .card {
   margin: 35px 10px 0 0;
+  border-radius: 30px;
  }
 
+ .card-img {
+  border-radius: 30px;
+ }
+
+ 
  .btn {
   background-color: #310C7E;
   border-radius: 30px;
