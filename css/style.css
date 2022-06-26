@@ -128,7 +128,7 @@ header {
  .banner-info-box{
     grid-area: texto; 
    color: black;
-   font-family: 'Titilliun';
+   font-family: 'Roboto';
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -141,11 +141,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   /* width: 500px;
   height: 250px; */
  }
 
  .info-title {
+   font-weight: bolder;
    padding-top: 50px;
    font-size: 60px;
    text-shadow: 10px 30px 10px rgba(0, 0, 0, 0.256);
@@ -153,7 +155,7 @@ header {
  
  .subscribe {
    
-   margin-top: 30px;
+  
    background-color: #7045cd;
    height: 70px;
    width: 250px;
@@ -164,14 +166,19 @@ header {
    font-size: 30px;
    text-transform: uppercase;
    color: white;
-   margin-bottom: 50px;
+   
+   
 
  }
 
- .link-sub {
+ .info-link {
    text-decoration: none;
    color: white;
    font-family: 'Roboto';
+ }
+
+ .info-link:hover{
+  color: #AAB0AE;
  }
 
  .subscribe:hover{
@@ -281,6 +288,8 @@ header {
   background-color: #6b35df;
  }
 
+ /* Breackpoints */
+
  @media all and (max-width: 1920px) {
   .card-title {
     font-size: 1.3rem;
@@ -294,12 +303,14 @@ header {
    }
  }
 
- @media all and (max-width: 991px) {
+ @media all and (max-width: 991px){
   header .logo {
       width: 230px;
       margin-left: 15px;
   }
   
+  
+
   
   /* navbar */
   header .menu {
@@ -344,7 +355,7 @@ header {
       opacity: 1 !important; /* visível */
   }
 
-  .patrocinados {
+  .patrocinio {
       display: none;
   }
 }
@@ -380,7 +391,18 @@ header {
       font-size: 1rem;
   }
 
+  .banner {
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #8052e2, #310C7E);
+  }
 
+  .banner-info {
+    margin-left: 200px;
+    margin-top: -100px;
+  }
+
+  
   .card-title {
     font-size: 1.4rem;
     margin-top: 2rem;
