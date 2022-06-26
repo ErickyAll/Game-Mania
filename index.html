@@ -16,7 +16,7 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="container-grid header-flex">
         <div class="logo">
           <img
             src="./images/logo.png"
@@ -34,52 +34,63 @@
           <a href="#" class="menu-text">Sobre</a>
           <a href="#" class="menu-text">Pedidos</a>
         </nav>
+
+        <img
+          onclick="abreFechaMenu();"
+          class="menu-bars"
+          src="./images/bars.PNG"
+          alt=""
+        />
       </div>
     </header>
 
     <main>
       <div class="banner">
-        <div class="text-banner">
-          <h2>
-            Sua loja de<br />Games<br />
-            mais perto <br />de você
-          </h2>
+        <div class="container-grid banner-info-box">
+          <article class="banner-info">
+            <h2 class="info-title">
+              Sua loja de<br />Games<br />
+              mais perto <br />de você
+            </h2>
 
-          <div class="subscribe">
-            <a href="./login.html" class="link-sub">Cadastre-se</a>
-          </div>
+            <div class="subscribe">
+              <a href="./login.html" class="link-sub">Cadastre-se</a>
+            </div>
+          </article>
         </div>
       </div>
 
       <!-- Patrocinios -->
 
       <section class="patrocinio">
-        <a href="https://www.sony.com/en/" target="_blank">
-          <img src="./images/Patrocinio/sony.png" alt="Sony" class="sony" />
-        </a>
+        <div class="container-grid patrocinio-flex">
+          <a href="https://www.sony.com/en/" target="_blank">
+            <img src="./images/Patrocinio/sony.png" alt="Sony" class="sony" />
+          </a>
 
-        <a href="https://www.nintendo.com/" target="_blank">
-          <img
-            src="./images/Patrocinio/nintendo.png"
-            alt="Nintendo"
-            class="nintendo"
-          />
-        </a>
+          <a href="https://www.nintendo.com/" target="_blank">
+            <img
+              src="./images/Patrocinio/nintendo.png"
+              alt="Nintendo"
+              class="nintendo"
+            />
+          </a>
 
-        <a
-          href="https://www.playstation.com/pt-br/?emcid=pa-ha-430499&gclid=CjwKCAjwtIaVBhBkEiwAsr7-cz58t3buyAJvFIgqERcZXVYTqDsYmNkn7I-Ri6VXXVYEfWgCZjZWPRoCG8oQAvD_BwE"
-          target="_blank"
-        >
-          <img
-            src="./images/Patrocinio/playstation-.svg"
-            alt="Playstation"
-            class="playstation"
-          />
-        </a>
+          <a
+            href="https://www.playstation.com/pt-br/?emcid=pa-ha-430499&gclid=CjwKCAjwtIaVBhBkEiwAsr7-cz58t3buyAJvFIgqERcZXVYTqDsYmNkn7I-Ri6VXXVYEfWgCZjZWPRoCG8oQAvD_BwE"
+            target="_blank"
+          >
+            <img
+              src="./images/Patrocinio/playstation-.svg"
+              alt="Playstation"
+              class="playstation"
+            />
+          </a>
 
-        <a href="https://www.xbox.com/pt-BR" target="_blank">
-          <img src="./images/Patrocinio/Xbox.svg" alt="Xbox" class="xbox" />
-        </a>
+          <a href="https://www.xbox.com/pt-BR" target="_blank">
+            <img src="./images/Patrocinio/Xbox.svg" alt="Xbox" class="xbox" />
+          </a>
+        </div>
       </section>
 
       <!-- produtos -->
@@ -123,57 +134,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-              <div class="card text-white">
-                <img
-                  src="./images/dualshock-bg.PNG"
-                  class="card-img"
-                  alt="Dualshock"
-                />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Dualshock <br />
-                    Playstation
-                  </h5>
-                  <a href="#" class="btn btn-primary">R$250,00</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-              <div class="card text-white">
-                <img
-                  src="./images/dualshock-bg.PNG"
-                  class="card-img"
-                  alt="Dualshock"
-                />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Dualshock <br />
-                    Playstation
-                  </h5>
-                  <a href="#" class="btn btn-primary">R$250,00</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
-              <div class="card text-white">
-                <img
-                  src="./images/dualshock-bg.PNG"
-                  class="card-img"
-                  alt="Dualshock"
-                />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Dualshock <br />
-                    Playstation
-                  </h5>
-                  <a href="#" class="btn btn-primary">R$250,00</a>
-                </div>
-              </div>
-            </div>
           </div>
           <!--row end -->
         </div>
@@ -184,5 +144,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
