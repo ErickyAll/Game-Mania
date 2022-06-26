@@ -331,7 +331,7 @@ header {
 
       padding: 20px 50px;
       background-image: linear-gradient(to bottom, black,#310C7E );
-      border-radius: 0 0 0 90px;
+      border-radius: 0 0  190px;
       transition: left 0.4s, opacity 0.5s;
   }
 
@@ -394,12 +394,27 @@ header {
   .banner {
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #8052e2, #310C7E);
+    /* background-image: linear-gradient(to bottom, #8052e2, #310C7E); */
+    background-image: url(../images/Soldado.png);
+    background-color: #170837;
+    background-position-x: 50%;
+    background-position-y: 40px;
+   
   }
+
+  .info-title {
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: -300px;
+  }
+
+
 
   .banner-info {
     margin-left: 200px;
     margin-top: -100px;
+    color: aliceblue;
+    
   }
 
   
