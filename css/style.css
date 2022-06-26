@@ -117,22 +117,23 @@ header {
    background-repeat: no-repeat;
    width: 100%;
 
-   /* display: grid;
+    display: grid;
    grid-template-columns: 1fr 200px;
-   grid-template-areas: Banner texto;  */
+   grid-template-areas: Banner texto; 
    /* height: 629px;
    padding: 0 200px; */ 
   
  }
 
  .banner-info-box{
-   /* grid-area: texto; */
+    grid-area: texto; 
    color: black;
    font-family: 'Titilliun';
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
+   margin-right: 400px
 
  }
 
@@ -242,31 +243,63 @@ header {
  .card {
   margin: 35px 10px 0 0;
   border-radius: 30px ;
+  height: 184px;
+  overflow: hidden;
  }
 
  .card-img {
   border-radius: 30px;
  }
 
+ .card-title {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619)
+ }
  
- .btn {
+ .btn-price {
+  
   background-color: #310C7E;
-  border-radius: 30px;
+  border-radius: 40px;
   font-weight: bold;
   border: none;
+
+  width: 80%;
+  height: 20%;
+
+  margin-top: 3.8rem;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: .2rem;
+  box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.466);
  }
 
- .btn:hover {
+ .btn-price:hover {
   background-color: #6b35df;
  }
 
+ @media all and (max-width: 1920px) {
+  .card-title {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619)
+   }
+   
+   .btn-price {
+    margin-top: 2.4rem;
+    margin-left: 9%;
+   }
+ }
 
  @media all and (max-width: 991px) {
   header .logo {
       width: 230px;
       margin-left: 15px;
   }
-
+  
   
   /* navbar */
   header .menu {
@@ -346,4 +379,21 @@ header {
       border-left: 2px dotted #AAB0AE;
       font-size: 1rem;
   }
+
+
+  .card-title {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    
+   }
+   
+   .btn-price {
+    
+    margin-top: 43px;
+    margin-left: 9%;
+    letter-spacing: .1rem;
+    
+   }
+
+
 }
